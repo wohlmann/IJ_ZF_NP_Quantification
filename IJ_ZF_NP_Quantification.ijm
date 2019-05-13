@@ -2472,9 +2472,11 @@ macro "Zebrafish particle distribution analysis" {
 						}
 							else{
 								print("manual selection of artery ROI ["+rep+" regions]");
+								selectWindow(""+par+""+title1+"");
+								run("Enhance Contrast", "saturated=0.4");
 //manual artery selection:
 								ar=0;
-								for (j=0; j<rep; j++) {
+								for (k=0; k<rep; k++) {
 									ar=ar+1;
 									roiManager("deselect");
 									selectWindow(""+par+""+title1+"");
