@@ -2130,10 +2130,10 @@ macro "Zebrafish particle distribution analysis" {
 						print("IMAGE "+Nrep+" of "+nImg+"");
 						print("analysing "+title1+":");
 						run("Split Channels");
-						selectWindow(""+endo+""+title1+"");
-						run("Select None");
-						run("Duplicate...", " ");
 						if(mart==false){
+							selectWindow(""+endo+""+title1+"");
+							run("Select None");
+							run("Duplicate...", " ");
 		//adjust signal to noise ratio
 							print("adjusting signal to noise ratio via FFT Bandpass filter");
 							run("Bandpass Filter...", "filter_large=300 filter_small=5 suppress=None tolerance=20 autoscale saturate");
