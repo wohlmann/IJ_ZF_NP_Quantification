@@ -1049,6 +1049,9 @@ macro "Zebrafish particle distribution analysis" {
 	run("Clear Results");
 	updateResults;
 	roiManager("reset");
+	setOption("BlackBackground", true);
+  	setBackgroundColor(0,0,0); 
+  	setForegroundColor(255,255,255);
 	while (nImages>0) {					//del single ROIs
 		selectImage(nImages);
 		close();
