@@ -1170,9 +1170,7 @@ macro "Zebrafish particle distribution analysis" {
 			if(roiManager("count") <= 1){
 				ERROR=true;
 				setBatchMode("show");
-//NEW
-				selectWindow(""+par+""+title1+"");
-//NEW
+				selectWindow(""+par+""+title1+""); //image to be saved if failed
 				run("Brightness/Contrast...");
 				run("Enhance Contrast", "saturated=0.35");
 				run("Flatten");
@@ -1294,9 +1292,7 @@ macro "Zebrafish particle distribution analysis" {
 				if(roiManager("count") <= 1){
 					ERROR=true;
 					setBatchMode("show");
-//NEW
-					selectWindow(""+mac+""+title1+"");
-//NEW
+					selectWindow(""+mac+""+title1+""); 		//image to be saved if failed
 					run("Brightness/Contrast...");
 					run("Enhance Contrast", "saturated=0.35");
 					run("Flatten");
@@ -1512,9 +1508,7 @@ macro "Zebrafish particle distribution analysis" {
 			if(roiManager("count") <= 1){
 				ERROR=true;
 				setBatchMode("show");
-//NEW
-				selectWindow(""+par+""+title1+"");
-//NEW
+				selectWindow(""+par+""+title1+""); 		//image to be saved if failed
 				run("Brightness/Contrast...");
 				run("Enhance Contrast", "saturated=0.35");
 				run("Flatten");
@@ -1628,9 +1622,7 @@ macro "Zebrafish particle distribution analysis" {
 				if(roiManager("count") <= 1){
 					ERROR=true;
 					setBatchMode("show");
-//NEW
-					selectWindow(""+mac+""+title1+"");
-//NEW
+					selectWindow(""+mac+""+title1+"");		//image to be saved if failed
 					run("Brightness/Contrast...");
 					run("Enhance Contrast", "saturated=0.35");
 					run("Flatten");
@@ -1781,9 +1773,7 @@ macro "Zebrafish particle distribution analysis" {
 					if(roiManager("count") <= 1){
 						ERROR=true;
 						setBatchMode("show");
-//NEW
-						selectWindow(""+endo+""+title1+"");
-//NEW
+						selectWindow(""+endo+""+title1+"");		//image to be saved if failed
 						run("Brightness/Contrast...");
 						run("Enhance Contrast", "saturated=0.35");
 						run("Flatten");
@@ -1983,9 +1973,7 @@ macro "Zebrafish particle distribution analysis" {
 							if(roiManager("count") == 0){
 								ERROR=true;
 								setBatchMode("show");
-//NEW
-								selectWindow(""+endo+""+title1+"");
-//NEW
+								selectWindow(""+endo+""+title1+"");		//image to be saved if failed
 								run("Brightness/Contrast...");
 								run("Enhance Contrast", "saturated=0.35");
 								run("Flatten");
@@ -2043,9 +2031,7 @@ macro "Zebrafish particle distribution analysis" {
 								if(roiManager("count") == 0){
 									ERROR=true;
 									setBatchMode("show");
-//NEW
-									selectWindow(""+endo+""+title1+"");
-//NEW
+									selectWindow(""+endo+""+title1+""); 		//image to be saved if failed
 									run("Brightness/Contrast...");
 									run("Enhance Contrast", "saturated=0.35");
 									run("Flatten");
@@ -2396,9 +2382,7 @@ macro "Zebrafish particle distribution analysis" {
 							if(roiManager("count") == 0){
 								ERROR=true;
 								setBatchMode("show");
-//NEW
-								selectWindow(""+endo+""+title1+"");
-//NEW
+								selectWindow(""+endo+""+title1+"");		//image to be saved if failed
 								run("Brightness/Contrast...");
 								run("Enhance Contrast", "saturated=0.35");
 								run("Flatten");
@@ -2713,9 +2697,7 @@ macro "Zebrafish particle distribution analysis" {
 									if(roiManager("count") == 0){
 										ERROR=true;
 										setBatchMode("show");
-//NEW
-										selectWindow(""+par+""+title1+"");
-//NEW
+										selectWindow(""+par+""+title1+"");		//image to be saved if failed
 										run("Brightness/Contrast...");
 										run("Enhance Contrast", "saturated=0.35");
 										run("Flatten");
@@ -2993,9 +2975,7 @@ macro "Zebrafish particle distribution analysis" {
 								if(roiManager("count") == 0){
 									ERROR=true;
 									setBatchMode("show");
-//NEW
-									selectWindow(""+par+""+title1+"");
-//NEW
+									selectWindow(""+par+""+title1+""); 		//image to be saved if failed
 									run("Brightness/Contrast...");
 									run("Enhance Contrast", "saturated=0.35");
 									run("Flatten");
@@ -3143,9 +3123,7 @@ macro "Zebrafish particle distribution analysis" {
 		if(roiManager("count") ==0){
 			ERROR=true;
 			setBatchMode("show");
-//NEW
-			selectWindow(""+tra+""+title1+"");
-//NEW
+			selectWindow(""+tra+""+title1+"");		//image to be saved if failed
 			run("Brightness/Contrast...");
 			run("Enhance Contrast", "saturated=0.35");
 			run("Flatten");
